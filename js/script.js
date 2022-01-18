@@ -25,7 +25,6 @@ function createContent() {
 }
 
 toggler.addEventListener("click", function () {
-  console.log("ciao");
   toggler.classList.add("bounce");
   partLeft.classList.add("partFadeVertical");
   partRight.classList.add("partFadeVertical");
@@ -36,20 +35,16 @@ toggler.addEventListener("click", function () {
 
 // COUNTER & FANCY STUFF
 plusElement.addEventListener("click", function () {
-  console.log("ciao");
   i++;
   num.innerHTML = i;
   num.classList.remove("animation");
   resetFade();
-
 });
 minusElement.addEventListener("click", function () {
   i--;
-  console.log(i);
   num.innerHTML = i;
   resetFade();
   num.classList.remove("animation");
-  
 });
 
 resetCounter.addEventListener("click", function () {
@@ -58,7 +53,6 @@ resetCounter.addEventListener("click", function () {
     i = 0;
     resetFade();
     num.innerHTML = i;
-    console.log(i);
   }
 });
 
