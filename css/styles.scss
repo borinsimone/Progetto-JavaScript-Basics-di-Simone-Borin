@@ -355,25 +355,30 @@ select {
         }
         10% {
           box-shadow: none;
+          -webkit-transform: translateY(0px);
           transform: translateY(0px);
         }
 
         22% {
           box-shadow: none;
+          -webkit-transform: translateY(-80px) rotatex(0deg);
           transform: translateY(-80px) rotatex(0deg);
           height: 80px;
         }
         60% {
           box-shadow: none;
+          -webkit-transform: translateY(-80px) rotatex(360deg);
           transform: translateY(-80px) rotatex(360deg);
         }
         90% {
+          -webkit-transform: translateY(0px) rotatex(360deg);
           transform: translateY(0px) rotatex(360deg);
 
           color: rgb(80, 212, 190);
           box-shadow: none;
         }
         100% {
+          -webkit-transform: translateY(0px) rotatex(360deg);
           transform: translateY(0px) rotatex(360deg);
           color: black !important;
         }
