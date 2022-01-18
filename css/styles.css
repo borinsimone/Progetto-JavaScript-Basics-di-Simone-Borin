@@ -217,7 +217,7 @@ select {
 }
 
 .container .partFadeHorizontal {
-  height: 10vh;
+  height: 20vh;
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
