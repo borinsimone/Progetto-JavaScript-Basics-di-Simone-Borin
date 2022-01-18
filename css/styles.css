@@ -217,7 +217,7 @@ select {
 }
 
 .container .partFadeHorizontal {
-  height: 30vh;
+  height: 10vh;
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
@@ -397,31 +397,31 @@ select {
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   22% {
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transform: translateY(-80px) rotatex(0deg);
-            transform: translateY(-80px) rotatex(0deg);
+    transform: translateY(-80px) rotatex(0deg);
     height: 80px;
   }
   60% {
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transform: translateY(-80px) rotatex(360deg);
-            transform: translateY(-80px) rotatex(360deg);
+    transform: translateY(-80px) rotatex(360deg);
   }
   90% {
     -webkit-transform: translateY(0px) rotatex(360deg);
-            transform: translateY(0px) rotatex(360deg);
+    transform: translateY(0px) rotatex(360deg);
     color: #50d4be;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
   100% {
     -webkit-transform: translateY(0px) rotatex(360deg);
-            transform: translateY(0px) rotatex(360deg);
+    transform: translateY(0px) rotatex(360deg);
     color: black !important;
   }
 }
@@ -440,31 +440,31 @@ select {
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+    transform: translateY(0px);
   }
   22% {
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transform: translateY(-80px) rotatex(0deg);
-            transform: translateY(-80px) rotatex(0deg);
+    transform: translateY(-80px) rotatex(0deg);
     height: 80px;
   }
   60% {
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transform: translateY(-80px) rotatex(360deg);
-            transform: translateY(-80px) rotatex(360deg);
+    transform: translateY(-80px) rotatex(360deg);
   }
   90% {
     -webkit-transform: translateY(0px) rotatex(360deg);
-            transform: translateY(0px) rotatex(360deg);
+    transform: translateY(0px) rotatex(360deg);
     color: #50d4be;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
   100% {
     -webkit-transform: translateY(0px) rotatex(360deg);
-            transform: translateY(0px) rotatex(360deg);
+    transform: translateY(0px) rotatex(360deg);
     color: black !important;
   }
 }
