@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/5f5c3819f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- COVER -->
+    <div class="container">
+      <div class="toggler" id="toggler"></div>
+      <div class="partLeft" id="partLeft"></div>
+      <div class="partRight" id="partRight"></div>
+      <div class="partTop" id="partTop"></div>
+      <div class="partBottom" id="partBottom"></div>
+      <div class="hero" id="hero">
+        <div class="content" id="content"></div>
+        <!-- <div class="resetCounter" id="resetCounter">reset</div> -->
+      </div>
+    </div>
+    <script>
+      let part = document.getElementById("part");
+      let toggler = document.getElementById("toggler");
+      let hero = document.getElementById("hero");
+      let content = document.getElementById("content");
+      let info = document.getElementById("info");
+      let plusElement = document.createElement("div");
+      let minusElement = document.createElement("div");
+      let num = document.createElement("p");
+      let resetCounter = document.createElement("div");
+      let i = 0;
+      function createContent() {
+        plusElement.classList.add("plusClass");
+        minusElement.classList.add("minusClass");
+        num.classList.add("numClass");
+        resetCounter.classList.add("resetCounter");
+        content.classList.add("contentFadeIn");
+
+        hero.appendChild(resetCounter);
+        content.appendChild(minusElement);
+        content.appendChild(num);
+        num.innerHTML = i;
+
+        content.appendChild(plusElement);
+      }
+      toggler.addEventListener("click", function () {
+        console.log("ciao");
+        toggler.classList.add("bounce");
+        partLeft.classList.add("partFadeVertical");
+        partRight.classList.add("partFadeVertical");
+        partTop.classList.add("partFadeHorizontal");
+        partBottom.classList.add("partFadeHorizontal");
+        createContent();
+      });
+      plusElement.addEventListener("click", function () {
+        console.log("ciao");
+        i++;
+        num.innerHTML = i;
+        num.classList.remove("animation");
+        resetFade();
+
+        // bounce();
+      });
+      minusElement.addEventListener("click", function () {
+        i--;
+        console.log(i);
+        num.innerHTML = i;
+        resetFade();
+        num.classList.remove("animation");
+        // bounce();
+      });
+
+      resetCounter.addEventListener("click", function () {
+        if (i != 0) {
+          num.classList.add("animation");
+          i = 0;
+          resetFade();
+          num.innerHTML = i;
+        console.log(i);
+
+        }
+      });
+
+      function resetFade() {
+        if (i != 0) {
+          resetCounter.classList.add("infoVisible");
+        } else {
+          resetCounter.classList.remove("infoVisible");
+        }
+      }
+    </script>
+  </body>
+</html>
+<!DOCTYPE html>
