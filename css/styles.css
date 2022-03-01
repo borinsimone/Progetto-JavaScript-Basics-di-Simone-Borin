@@ -83,6 +83,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  cursor: pointer;
 }
 
 @-webkit-keyframes bounceIn {
@@ -96,7 +97,7 @@ select {
     transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
   0% {
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: scale3d(0.3, 0.3, 0.3);
     transform: scale3d(0.3, 0.3, 0.3);
   }
@@ -109,12 +110,14 @@ select {
     transform: scale3d(0.9, 0.9, 0.9);
   }
   60% {
+    opacity: 1;
     -webkit-transform: scale3d(1.03, 1.03, 1.03);
     transform: scale3d(1.03, 1.03, 1.03);
   }
   80% {
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
     transform: scale3d(0.97, 0.97, 0.97);
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -154,7 +157,7 @@ select {
   80% {
     -webkit-transform: scale3d(0.97, 0.97, 0.97);
     transform: scale3d(0.97, 0.97, 0.97);
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     opacity: 0;
