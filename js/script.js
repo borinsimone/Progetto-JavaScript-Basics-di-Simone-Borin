@@ -23,6 +23,7 @@ function createContent() {
 
   content.appendChild(plusElement);
 }
+window.onload=createContent()
 
 toggler.addEventListener("click", function () {
   toggler.classList.add("bounce");
@@ -30,7 +31,6 @@ toggler.addEventListener("click", function () {
   partRight.classList.add("partFadeVertical");
   partTop.classList.add("partFadeHorizontal");
   partBottom.classList.add("partFadeHorizontal");
-  createContent();
 });
 
 // COUNTER & FANCY STUFF

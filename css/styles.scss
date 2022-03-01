@@ -72,6 +72,9 @@ select {
     top: calc(50vh - 25px);
     left: calc(50vw - 25px);
     z-index: 101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   @-webkit-keyframes bounceIn {
     0%,
